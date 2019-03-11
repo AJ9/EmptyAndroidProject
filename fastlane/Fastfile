@@ -23,7 +23,7 @@ platform :android do
 
   desc "Runs all the UI tests"
   lane :testUI do
-    gradle(task: "connectedAndroidTest")
+    gradle(task: "test connectedAndroidTest")
   end
 
   desc "Deploy a new version to the Google Play"
